@@ -11,8 +11,23 @@
     - average([1, '2']) // Retorno: undefined;
 */
 
-const average = () => {
+// eslint-disable-next-line complexity, sonarjs/cognitive-complexity
+const average = (array) => {
   // adicione seu código aqui
+  let b = 'true';
+  let soma = 0;
+for (let i = 0; i < array.length; i += 1) {
+  let verify = typeof array[i] !== 'string';
+  if (typeof array[i] !== 'number') {
+  b = 'false';
+  }
+  soma += array[i];
+}
+if (b === 'false' || array.length === 0) {
+  return undefined;
+}
+let media = Math.round(soma / array.length); 
+return media;
 };
 
 module.exports = average;
