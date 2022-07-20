@@ -41,7 +41,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
       { name: undefined, details: { productId: 'undefined123' } }
     ])
     // Teste se o array retornado pela função contém dois itens dentro.
-    expect(productDetails('a', 'a')[0]).toEqual({ name: 'a', details: { productId: 'a123' } })
+    expect(productDetails('a', 'a')[0]).toEqual({ name: 'a', details: { productId: 'a123' } }) 
     expect(productDetails('a', 'a')[1]).toEqual({ name: 'a', details: { productId: 'a123' } })
     // Teste se os dois itens dentro do array retornado pela função são objetos.
     expect(typeof productDetails('a', 'a')[0]).toEqual('object')
