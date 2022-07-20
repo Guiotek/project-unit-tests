@@ -37,7 +37,7 @@
 const calculator = (number1, number2) => {
   let S = Math.round(number1 + number2);
   let m = Math.round(number1 * number2);
-  let d = Math.round(number1 / number2);
+  let d = Math.floor(number1 / number2);
   let s = Math.round(number1 - number2);
   return {
   sum: S,
@@ -58,5 +58,5 @@ const arrayGenerator = (type, object) => {
     return Object.entries(object);
   }
 };
-
+console.log(Math.floor(5 / 2));
 module.exports = { calculator, arrayGenerator };
