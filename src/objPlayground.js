@@ -35,10 +35,10 @@
 */
 
 const calculator = (number1, number2) => {
-  let S = number1 + number2;
-  let m = number1 * number2;
-  let d = number1 / number2;
-  let s = number1 - number2;
+  let S = Math.round(number1 + number2);
+  let m = Math.round(number1 * number2);
+  let d = Math.round(number1 / number2);
+  let s = Math.round(number1 - number2);
   return {
   sum: S,
   mult: m,
